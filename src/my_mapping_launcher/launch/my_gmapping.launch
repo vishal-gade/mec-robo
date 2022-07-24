@@ -1,0 +1,8 @@
+<launch>
+  <arg name="scan_topic"  default="/scan" />
+  <arg name="base_frame"  default="chassis"/>
+  <arg name="odom_frame"  default="odom"/>
+
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+  </node>
+</launch>
